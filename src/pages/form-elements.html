@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Document</title>
+</head>
+<body>
+   <div class="navbar-container">
+      <button class="navbar-container__button"  type="button" role="button" data-bs-target="#navbar" data-bs-toggle="collapse" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+         <div class="bar"></div>
+         <div class="bar"></div>
+         <div class="bar"></div>
+      </button>
+      <nav id="navbar" class="navbar navbar-light collapse show navbar-collapse bg-light side-nav  px-3 py-4">
+         <div class="side-nav__content">
+            <h3 class="navbar-text mb-4">Responsive SideBar Navbar</h3>
+            <div class="side-nav-accordion accordion" id="sideNavAccordion">
+               <div class="accordion-item side-nav-accordion__item side-nav-accordion__item--light">
+                  <h2 class="accordion-header side-nav-accordion__header" id="headingOne">
+                     <button class="accordion-button side-nav-accordion__button side-nav-accordion__button--light" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        Layout
+                     </button>
+                  </h2>
+                  <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" >
+                     <div class="accordion-body side-nav-accordion__body">
+                        <ul class="side-nav-accordion__list">
+                           <li class="side-nav-accordion__list-item"><a href="index.html">Grid</a></li>
+                        </ul>
+                     </div>
+                  </div>
+               </div>
+               <div class="accordion-item side-nav-accordion__item side-nav-accordion__item--light">
+                  <h2 class="accordion-header side-nav-accordion__header" id="headingTwo">
+                     <button class="accordion-button side-nav-accordion__button side-nav-accordion__button--light collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        UI Elements
+                     </button>
+                  </h2>
+                  <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" >
+                     <div class="accordion-body side-nav-accordion__body">
+                        <ul class="side-nav-accordion__list">
+                           <li class="side-nav-accordion__list-item"><a href="spinners.html">Buttons & Spinners</a></li>
+                           <li class="side-nav-accordion__list-item"><a href="tables.html">Tables</a></li>
+                           <li class="side-nav-accordion__list-item"><a href="modals.html">Modals & DropDowns</a></li>
+                        </ul>
+                     </div>
+                  </div>
+               </div>
+               <div class="accordion-item side-nav-accordion__item side-nav-accordion__item--light">
+                  <h2 class="accordion-header side-nav-accordion__header" id="headingThree">
+                     <button class="accordion-button side-nav-accordion__button side-nav-accordion__button--light collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        Forms
+                     </button>
+                  </h2>
+                  <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" >
+                     <div class="accordion-body side-nav-accordion__body">
+                        <ul class="side-nav-accordion__list">
+                           <li class="side-nav-accordion__list-item"><a href="form.html">General Form</a></li>
+                           <li class="side-nav-accordion__list-item"><a href="form-validation.html">Form Validation</a></li>
+                           <li class="side-nav-accordion__list-item"><a href="form-elements.html">Form Elements</a></li>
+                        </ul>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+       </nav>     
+   </div>
+</body>
+</html>

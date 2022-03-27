@@ -4,7 +4,7 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 module.exports = {
   devtool: 'source-map',
   entry: {
-     index: './src/index.js',
+      index: './src/index.js',
   },
   output: {
     filename: 'bundle.js',
@@ -35,8 +35,37 @@ module.exports = {
      new HtmlWebpackPlugin({
         template: './src/index.html',
         inject: true,
-        chunks: ['index'],
         filename: 'index.html'
+     }),
+     new HtmlWebpackPlugin({
+        template: './src/modals.html',
+        inject: true,
+        filename: 'modals.html'
+     }),
+     new HtmlWebpackPlugin({
+        template: './src/pages/spinners.html',
+        inject: true,
+        filename: 'spinners.html'
+     }),
+     new HtmlWebpackPlugin({
+        template: './src/pages/tables.html',
+        inject: true,
+        filename: 'tables.html'
+     }),
+     new HtmlWebpackPlugin({
+        template: './src/pages/form.html',
+        inject: true,
+        filename: 'form.html'
+     }),
+     new HtmlWebpackPlugin({
+        template: './src/pages/form-elements.html',
+        inject: true,
+        filename: 'form-elements.html'
+     }),
+     new HtmlWebpackPlugin({
+        template: './src/pages/form-validation.html',
+        inject: true,
+        filename: 'form-validation.html'
      })
   ]
 }

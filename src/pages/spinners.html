@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Button and Spinner</title>
+</head>
+<body>
+   <div class="navbar-container">
+      <button class="navbar-container__button"  type="button" role="button" data-bs-target="#navbar" data-bs-toggle="collapse" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+         <div class="bar"></div>
+         <div class="bar"></div>
+         <div class="bar"></div>
+      </button>
+      <nav id="navbar" class="navbar navbar-light collapse show navbar-collapse bg-light side-nav  px-3 py-4">
+         <div class="side-nav__content">
+            <h3 class="navbar-text mb-4">Responsive SideBar Navbar</h3>
+            <div class="side-nav-accordion accordion" id="sideNavAccordion">
+               <div class="accordion-item side-nav-accordion__item side-nav-accordion__item--light">
+                  <h2 class="accordion-header side-nav-accordion__header" id="headingOne">
+                     <button class="accordion-button side-nav-accordion__button side-nav-accordion__button--light" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        Layout
+                     </button>
+                  </h2>
+                  <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" >
+                     <div class="accordion-body side-nav-accordion__body">
+                        <ul class="side-nav-accordion__list">
+                           <li class="side-nav-accordion__list-item"><a href="index.html">Grid</a></li>
+                        </ul>
+                     </div>
+                  </div>
+               </div>
+               <div class="accordion-item side-nav-accordion__item side-nav-accordion__item--light">
+                  <h2 class="accordion-header side-nav-accordion__header" id="headingTwo">
+                     <button class="accordion-button side-nav-accordion__button side-nav-accordion__button--light collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        UI Elements
+                     </button>
+                  </h2>
+                  <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" >
+                     <div class="accordion-body side-nav-accordion__body">
+                        <ul class="side-nav-accordion__list">
+                           <li class="side-nav-accordion__list-item"><a href="spinners.html">Buttons & Spinners</a></li>
+                           <li class="side-nav-accordion__list-item"><a href="tables.html">Tables</a></li>
+                           <li class="side-nav-accordion__list-item"><a href="modals.html">Modals & DropDowns</a></li>
+                        </ul>
+                     </div>
+                  </div>
+               </div>
+               <div class="accordion-item side-nav-accordion__item side-nav-accordion__item--light">
+                  <h2 class="accordion-header side-nav-accordion__header" id="headingThree">
+                     <button class="accordion-button side-nav-accordion__button side-nav-accordion__button--light collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        Forms
+                     </button>
+                  </h2>
+                  <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" >
+                     <div class="accordion-body side-nav-accordion__body">
+                        <ul class="side-nav-accordion__list">
+                           <li class="side-nav-accordion__list-item"><a href="form.html">General Form</a></li>
+                           <li class="side-nav-accordion__list-item"><a href="form-validation.html">Form Validation</a></li>
+                           <li class="side-nav-accordion__list-item"><a href="form-elements.html">Form Elements</a></li>
+                        </ul>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         </nav>     
+   </div>
+   <div id="content" class="content px-3">
+      <h1 class="pt-3">Button and Spinners</h1>
+      <section class="bootstrap-buttons">
+         <!--First Row starts here-->
+         <div class="row my-3">
+            <div class="col-md-6 col-12">
+               <div class="card">
+                  <div class="card-header">Buttons and its Variants</div>
+                  <div class="card-body">
+                     <div class="d-flex flex-wrap">
+                        <button class="btn btn-primary" type="button">Primary</button>
+                        <button class="btn btn-secondary" type="button">Secondary</button>
+                        <button class="btn btn-success" type="button">Success</button>
+                        <button class="btn btn-warning" type="button">Warning</button>
+                        <button class="btn btn-danger" type="button">Danger</button>
+                        <button class="btn btn-info" type="button">Info</button>
+                        <button class="btn btn-light" type="button">Light</button>
+                        <button class="btn btn-dark" type="button">Dark</button>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="col-md-6 col-12">
+               <div class="card">
+                  <div class="card-header">Anchor and Input as Button, Disabled Buttons and Links</div>
+                  <div class="card-body">
+                     <div class="d-flex flex-wrap">
+                        <a class="btn btn-primary" href="#" role="button">Link</a>
+                        <input class="btn btn-secondary" type="button" role="button" value="Input">
+                        <input class="btn btn-success" type="submit" role="button" value="Submit">
+                        <input class="btn btn-info" type="Reset" role="button" value="Reset">
+                        <button class="btn btn-success" type="button" role="button" disabled>Disabled Button</button>
+                        <a class="btn btn-warning disabled" href="#" role="button" tabindex="-1" aria-disabled="true">Disabled Link</a>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <!--First Row ends here-->
+         <!--Second Row starts here-->
+         <div class="row my-3">
+            <div class="col-md-6 col-12">
+               <div class="card">
+                  <div class="card-header">Buttons Sizing and Button Group</div>
+                  <div class="card-body">
+                     <button class="btn btn-primary btn-sm" type="button">SM Button</button>
+                     <button class="btn btn-primary btn-md" type="button">MD Button</button>
+                     <button class="btn btn-primary btn-lg" type="button">LG  Button</button>
+                     <div class="d-block bootstrap-buttons__button-group">
+                        <p>Horizontal button Group</p>
+                        <div class="btn-group" role="group" aria-labelledby="Horizontal Button Group">
+                           <button class="btn btn-primary" type="button">Left</button>
+                           <button class="btn btn-primary" type="button">Middle</button>
+                           <button class="btn btn-primary" type="button">Right</button>
+                        </div>
+                        <p>Vertical Button Group</p>
+                        <div class="btn-group-vertical" role="group" aria-labelledby="Vertical Button Group">
+                           <button class="btn btn-primary" type="button">Top</button>
+                           <button class="btn btn-primary" type="button">Middle</button>
+                           <button class="btn btn-primary" type="button">Bottom</button>
+                        </div>
+                        <p>CheckBox Buttons</p>
+                        <div class="btn-group" role="group" aria-labelledby="CheckBox Button">
+                           <input type="checkbox" class="btn-check" id="btn1">
+                           <label class="btn btn-outline-primary" for="btn1">Cheese</label>
+                           <input type="checkbox" class="btn-check" id="btn2">
+                           <label class="btn btn-outline-primary" for="btn2">Wine</label>
+                           <input type="checkbox" class="btn-check" id="btn3">
+                           <label class="btn btn-outline-primary" for="btn3">Meat</label>
+                        </div>
+                        <p>Radio Buttons</p>
+                        <div class="btn-group" role="group" aria-labelledby="Radio Button">
+                           <input type="radio" class="btn-check" name="radioBtn" id="radioBtn1">
+                           <label class="btn btn-outline-primary" for="radioBtn1">Cheese</label>
+                           <input type="radio" class="btn-check" name="radioBtn" id="radioBtn2">
+                           <label class="btn btn-outline-primary" for="radioBtn2">Wine</label>
+                           <input type="radio" class="btn-check" name="radioBtn" id="radioBtn3">
+                           <label class="btn btn-outline-primary" for="radioBtn3">Meat</label>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="col-md-6 col-12">
+               <div class="card">
+                  <div class="card-header">Spinners and Buttons with Spinners</div>
+                  <div class="card-body">
+                     <div class="d-flex mb-3">
+                        <div class="spinner-border" role="status"></div>
+                        <div class="spinner-border text-primary" role="status"></div>
+                        <div class="spinner-border text-secondary" role="status"></div>
+                        <div class="spinner-border text-danger" role="status"></div>
+                        <div class="spinner-border text-info" role="status"></div>
+                        <div class="spinner-border text-warning" role="status"></div>
+                     </div>
+                     <div class="d-flex mb-3">
+                        <div class="spinner-grow" role="status"></div>
+                        <div class="spinner-grow text-primary" role="status"></div>
+                        <div class="spinner-grow text-secondary" role="status"></div>
+                        <div class="spinner-grow text-danger" role="status"></div>
+                        <div class="spinner-grow text-info" role="status"></div>
+                        <div class="spinner-grow text-warning" role="status"></div>
+                     </div>
+                     <div class="d-flex flex-wrap">
+                        <button class="btn btn-success" type="button" role="button" disabled>
+                           <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
+                           Loading..
+                        </button>
+                        <button class="btn btn-secondary" type="button" role="button" disabled>
+                           <span class="spinner-border" role="status" aria-hidden="true"></span>
+                           Loading..
+                        </button>
+                        <button class="btn btn-success" type="button" role="button" disabled>
+                           <span class="spinner-grow spinner-grow-sm" role="status" aria-hidden="true"></span>
+                           Loading..
+                        </button>
+                        <button class="btn btn-secondary" type="button" role="button" disabled>
+                           <span class="spinner-grow" role="status" aria-hidden="true"></span>
+                           Loading..
+                        </button>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <!--Second Row ends here-->
+      </section>
+   </div>
+</body>
+</html>

@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Document</title>
+</head>
+<body>
+   <div class="navbar-container">
+      <button class="navbar-container__button"  type="button" role="button" data-bs-target="#navbar" data-bs-toggle="collapse" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+         <div class="bar"></div>
+         <div class="bar"></div>
+         <div class="bar"></div>
+      </button>
+      <nav id="navbar" class="navbar navbar-light collapse show navbar-collapse bg-light side-nav  px-3 py-4">
+         <div class="side-nav__content">
+            <h3 class="navbar-text mb-4">Responsive SideBar Navbar</h3>
+            <div class="side-nav-accordion accordion" id="sideNavAccordion">
+               <div class="accordion-item side-nav-accordion__item side-nav-accordion__item--light">
+                  <h2 class="accordion-header side-nav-accordion__header" id="headingOne">
+                     <button class="accordion-button side-nav-accordion__button side-nav-accordion__button--light" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        Layout
+                     </button>
+                  </h2>
+                  <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" >
+                     <div class="accordion-body side-nav-accordion__body">
+                        <ul class="side-nav-accordion__list">
+                           <li class="side-nav-accordion__list-item"><a href="index.html">Grid</a></li>
+                        </ul>
+                     </div>
+                  </div>
+               </div>
+               <div class="accordion-item side-nav-accordion__item side-nav-accordion__item--light">
+                  <h2 class="accordion-header side-nav-accordion__header" id="headingTwo">
+                     <button class="accordion-button side-nav-accordion__button side-nav-accordion__button--light collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        UI Elements
+                     </button>
+                  </h2>
+                  <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" >
+                     <div class="accordion-body side-nav-accordion__body">
+                        <ul class="side-nav-accordion__list">
+                           <li class="side-nav-accordion__list-item"><a href="spinners.html">Buttons & Spinners</a></li>
+                           <li class="side-nav-accordion__list-item"><a href="tables.html">Tables</a></li>
+                           <li class="side-nav-accordion__list-item"><a href="modals.html">Modals & DropDowns</a></li>
+                        </ul>
+                     </div>
+                  </div>
+               </div>
+               <div class="accordion-item side-nav-accordion__item side-nav-accordion__item--light">
+                  <h2 class="accordion-header side-nav-accordion__header" id="headingThree">
+                     <button class="accordion-button side-nav-accordion__button side-nav-accordion__button--light collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        Forms
+                     </button>
+                  </h2>
+                  <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" >
+                     <div class="accordion-body side-nav-accordion__body">
+                        <ul class="side-nav-accordion__list">
+                           <li class="side-nav-accordion__list-item"><a href="form.html">General Form</a></li>
+                           <li class="side-nav-accordion__list-item"><a href="form-validation.html">Form Validation</a></li>
+                           <li class="side-nav-accordion__list-item"><a href="form-elements.html">Form Elements</a></li>
+                        </ul>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         </nav>     
+   </div>
+   <div id="content" class="content px-3">
+      <h1 class="pt-3">Modals and DropDowns</h1>
+      <section class="bootstrap-grid-constructor py-3">
+         <div class="card">
+            <div class="card-header">
+               <div class="row justify-content-between">
+                  <h2 class="col-6">Bootstrap Grid Classes</h2>
+                  <div class="bootstrap-grid-section col-6 text-end">
+                     <button type="button" class="btn btn-primary btn-configure" data-bs-toggle="modal" data-bs-target="#gridModal"><i class="fa-solid fa-gear"> Configure</i></button>
+                  </div>   
+               </div>
+               <!-- Modal starts here -->
+               <div class="modal" id="gridModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                  <div class="modal-dialog modal-dialog-centered modal-xl modal-dialog-scrollable">
+                     <div class="modal-content">
+                        <div class="modal-header">
+                           <h5 class="modal-title" id="exampleModalLabel">Configure Grid Properties</h5>
+                           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                           <!--Tabs in Modal Start Here-->
+                           <ul class="nav nav-tabs" id="gridTab" role="tablist">
+                              <li class="nav-item" role="presentation">
+                              <button class="nav-link active" id="main-tab" data-bs-toggle="tab" data-bs-target="#main" type="button" role="tab" aria-controls="main" aria-selected="true">Main</button>
+                              </li>
+                              <li class="nav-item" role="presentation">
+                              <button class="nav-link" id="xs-tab" data-bs-toggle="tab" data-bs-target="#xSmall" type="button" role="tab" aria-controls="xSmall" aria-selected="false">XS Viewport</button>
+                              </li>
+                              <li class="nav-item" role="presentation">
+                              <button class="nav-link" id="small-tab" data-bs-toggle="tab" data-bs-target="#small" type="button" role="tab" aria-controls="small" aria-selected="false">SM Viewport</button>
+                              </li>
+                              <li class="nav-item" role="presentation">
+                              <button class="nav-link" id="medium-tab" data-bs-toggle="tab" data-bs-target="#medium" type="button" role="tab" aria-controls="medium" aria-selected="false">MD Viewport</button>
+                              </li>
+                              <li class="nav-item" role="presentation">
+                              <button class="nav-link" id="large-tab" data-bs-toggle="tab" data-bs-target="#large" type="button" role="tab" aria-controls="large" aria-selected="false"> LG Viewport</button>
+                              </li>
+                              <li class="nav-item" role="presentation">
+                              <button class="nav-link" id="xlarge-tab" data-bs-toggle="tab" data-bs-target="#xLarge" type="button" role="tab" aria-controls="xLarge" aria-selected="false">XL Viewport</button>
+                              </li>
+                              <li class="nav-item" role="presentation">
+                              <button class="nav-link" id="xxlarge-tab" data-bs-toggle="tab" data-bs-target="#xxLarge" type="button" role="tab" aria-controls="xxLarge" aria-selected="false">XXL Viewport</button>
+                              </li>
+                           </ul>
+                           <!--Tabs in Modal End Here-->
+                           <!--Tabs Content Starts Here-->
+                           <div class="tab-content" id="gridTabContent">
+                              <div class="tab-pane fade show active" id="main" role="tabpanel" aria-labelledby="main-tab">
+                                 <div class="container">
+                                    <div class="row">
+                                       <div class="input-group col-md-6  mt-3">
+                                          <label class="input-group-text" for="rowMarginTop">Margin Top</label>
+                                          <select class="form-select" id="rowMarginTop">
+                                             <option selected value="">Default (None)</option>
+                                             <option value="mt-1">4px </option>
+                                             <option value="mt-2">8px </option>
+                                             <option value="mt-3">16px </option>
+                                             <option value="mt-4">24px </option>
+                                             <option value="mt-5">48px </option>
+                                          </select>
+                                       </div>
+                                       <div class="input-group col-md-6  mt-3">
+                                          <label class="input-group-text" for="rowMarginBottom">Margin Bottom</label>
+                                          <select class="form-select" id="rowMarginBottom">
+                                             <option selected value="">Default (None)</option>
+                                             <option value="mb-1">4px </option>
+                                             <option value="mb-2">8px </option>
+                                             <option value="mb-3">16px </option>
+                                             <option value="mb-4">24px </option>
+                                             <option value="mb-5">48px </option>
+                                          </select>
+                                       </div>
+                                    </div>
+                                 </div>
+                                 <div class="container">
+                                    <div class="row">
+                                       <div class="input-group col-md-6  mt-3">
+                                          <label class="input-group-text" for="horizontalAlign">Horizontal Alignment</label>
+                                          <select class="form-select" id="horizontalAlign">
+                                             <option selected value="">Left (Default)</option>
+                                             <option value="justify-content-center">Center</option>
+                                             <option value="justify-content-end">Right</option>
+                                          </select>
+                                       </div>
+                                       <div class="input-group col-md-6  mt-3">
+                                          <label class="input-group-text" for="verticalAlign">Vertical Alignment</label>
+                                          <select class="form-select" id="verticalAlign">
+                                             <option selected value="">Top (Default)</option>
+                                             <option value="align-items-center">Middle</option>
+                                             <option value="align-items-end">Bottom</option>
+                                          </select>
+                                       </div>
+                                    </div>
+                                 </div>
+                                 <div class="container">
+                                    <div class="row">
+                                       <div class="input-group col-md-6  mt-3">
+                                          <label class="input-group-text" for="textAlign">Text Alignment</label>
+                                          <select class="form-select" id="textAlign">
+                                             <option selected value="text-left">Left (Default)</option>
+                                             <option value="text-center">Center</option>
+                                             <option value="text-end">Right</option>
+                                          </select>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="tab-pane fade" id="xSmall" role="tabpanel" aria-labelledby="xs-tab">
+                                 <div id="xs-multifield" class="xs-multifield multifield container" data-multifield-name="xs"></div>
+                                 <div class="container">
+                                    <button class="btn btn-primary mt-3" data-tab-type="xs" type="button">Add</button>
+                                 </div>
+                              </div>
+                              <div class="tab-pane fade" id="small" role="tabpanel" aria-labelledby="small-tab">
+                                 <div id="sm-multifield" class="sm-multifield multifield container" data-multifield-name="sm"></div>
+                                 <div class="container">
+                                    <button class="btn btn-primary mt-3" data-tab-type="sm" type="button">Add</button>
+                                 </div>
+                              </div>
+                              <div class="tab-pane fade" id="medium" role="tabpanel" aria-labelledby="medium-tab">
+                                 <div id="md-multifield" class="md-multifield multifield container" data-multifield-name="md"></div>
+                                 <div class="container">
+                                    <button class="btn btn-primary mt-3" data-tab-type="md" type="button">Add</button>
+                                 </div>
+                              </div>
+                              <div class="tab-pane fade" id="large" role="tabpanel" aria-labelledby="large-tab">
+                                 <div id="lg-multifield" class="lg-multifield multifield container" data-multifield-name="lg"></div>
+                                 <div class="container">
+                                    <button class="btn btn-primary mt-3" data-tab-type="lg" type="button">Add</button>
+                                 </div>
+                              </div>
+                              <div class="tab-pane fade" id="xLarge" role="tabpanel" aria-labelledby="xlarge-tab">
+                                 <div id="xl-multifield" class="xl-multifield multifield container" data-multifield-name="xl"></div>
+                                 <div class="container">
+                                    <button class="btn btn-primary mt-3" data-tab-type="xl" type="button">Add</button>
+                                 </div>
+                              </div>
+                              <div class="tab-pane fade" id="xxLarge" role="tabpanel" aria-labelledby="xxlarge-tab">
+                                 <div id="xxl-multifield" class="xxl-multifield multifield container" data-multifield-name="xxl"></div>
+                                 <div class="container">
+                                    <button class="btn btn-primary mt-3" data-tab-type="xxl" type="button">Add</button>
+                                 </div>
+                              </div>
+                           </div>
+                           <!--Tabs Content Ends Here-->
+                        </div>
+                        <div class="modal-footer">
+                           <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                           <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Save changes</button>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="card-body">
+               <p class="my-3">Click on Configure to view Modal</p>
+               <div id="bootstrap-grid" class="container">
+               </div>
+            </div>
+         </div>
+      </section>
+      <section class="bootstrap__dropdowns">
+         <!--First row starts here-->
+         <div class="row">
+            <!--First Dropdown Card Starts Here-->
+            <div class="col-lg-6 col-12">
+               <div class="card">
+                  <div class="card-header">Dropdown and its Variants</div>
+                  <div class="card-body">
+                     <div class="d-flex flex-wrap">
+                        <div class="dropdown mb-2 me-2">
+                           <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                           Dropdown button
+                           </button>
+                           <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                           <li><a class="dropdown-item" href="#">Action</a></li>
+                           <li><a class="dropdown-item" href="#">Another action</a></li>
+                           </ul>
+                        </div>
+                        <div class="dropdown mb-2 me-2">
+                           <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                           Dropdown button
+                           </button>
+                           <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                           <li><a class="dropdown-item" href="#">Action</a></li>
+                           <li><a class="dropdown-item" href="#">Another action</a></li>
+                           </ul>
+                        </div>
+                        <div class="dropdown mb-2 me-2">
+                           <button class="btn btn-info dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                           Dropdown button
+                           </button>
+                           <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                           <li><a class="dropdown-item" href="#">Action</a></li>
+                           <li><a class="dropdown-item" href="#">Another action</a></li>
+                           </ul>
+                        </div>
+                        <div class="dropdown mb-2 me-2">
+                           <button class="btn btn-warning dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                           Dropdown button
+                           </button>
+                           <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                           <li><a class="dropdown-item" href="#">Action</a></li>
+                           <li><a class="dropdown-item" href="#">Another action</a></li>
+                           </ul>
+                        </div>
+                        <div class="dropdown mb-2 me-2">
+                           <button class="btn btn-danger dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                           Dropdown button
+                           </button>
+                           <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                           <li><a class="dropdown-item" href="#">Action</a></li>
+                           <li><a class="dropdown-item" href="#">Another action</a></li>
+                           </ul>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <!--First Dropdown Card Ends Here-->
+            <!--Second Dropdown Card Starts Here-->
+            <div class="col-lg-6 col-12">
+               <div class="card">
+                  <div class="card-header">Dropdown Split Button and Sizing</div>
+                  <div class="card-body">
+                     <p class="mb-3">Achieved by using btn predefined styles like btn-danger btn-info and dropdown-toggle-split.</p>
+                     <div class="d-flex flex-wrap">
+                        <div class="btn-group my-2 me-2">
+                           <button type="button" class="btn btn-primary btn-sm">Action SM</button>
+                           <button type="button" class="btn btn-primary btn-sm dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false">
+                           <span class="visually-hidden">Toggle Dropdown</span>
+                           </button>
+                           <ul class="dropdown-menu">
+                           <li><a class="dropdown-item" href="#">Action</a></li>
+                           <li><a class="dropdown-item" href="#">Another action</a></li>
+                           <li><a class="dropdown-item" href="#">Something else here</a></li>
+                           </ul>
+                        </div>
+                        <div class="btn-group my-2 me-2">
+                           <button type="button" class="btn btn-secondary btn-md">Action MD</button>
+                           <button type="button" class="btn btn-secondary btn-md dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false">
+                           <span class="visually-hidden">Toggle Dropdown</span>
+                           </button>
+                           <ul class="dropdown-menu">
+                           <li><a class="dropdown-item" href="#">Action</a></li>
+                           <li><a class="dropdown-item" href="#">Used btn-md as class for Sizing</a></li>
+                           <li><a class="dropdown-item" href="#">Something else here</a></li>
+                           </ul>
+                        </div>
+                        <div class="btn-group my-2 me-2">
+                           <button type="button" class="btn btn-success btn-lg">Action LG</button>
+                           <button type="button" class="btn btn-success btn-lg dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false">
+                           <span class="visually-hidden">Toggle Dropdown</span>
+                           </button>
+                           <ul class="dropdown-menu">
+                           <li><a class="dropdown-item" href="#">Action</a></li>
+                           <li><a class="dropdown-item" href="#">Used btn-lg as class for Sizing</a></li>
+                           <li><a class="dropdown-item" href="#">Something else here</a></li>
+                           <li><hr class="dropdown-divider"></li>
+                           <li><a class="dropdown-item" href="#">Separated link</a></li>
+                           </ul>
+                        </div>
+                        <div class="btn-group my-2 me-2">
+                           <button type="button" class="btn btn-danger">Action Normal</button>
+                           <button type="button" class="btn btn-danger dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false">
+                           <span class="visually-hidden">Toggle Dropdown</span>
+                           </button>
+                           <ul class="dropdown-menu">
+                           <li><a class="dropdown-item" href="#">Action</a></li>
+                           <li><a class="dropdown-item" href="#">Regular button</a></li>
+                           <li><a class="dropdown-item" href="#">Something else here</a></li>
+                           </ul>
+                        </div>
+                        <div class="btn-group my-2 me-2">
+                           <button type="button" class="btn btn-info">Action Normal with Info</button>
+                           <button type="button" class="btn btn-info dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false">
+                           <span class="visually-hidden">Toggle Dropdown</span>
+                           </button>
+                           <ul class="dropdown-menu">
+                           <li><a class="dropdown-item" href="#">Action</a></li>
+                           <li><a class="dropdown-item" href="#">Another action</a></li>
+                           <li><a class="dropdown-item" href="#">Something else here</a></li>
+                           </ul>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <!--Second Dropdown Card Ends Here-->
+         </div>
+         <!--First row ends here-->
+         <!--Second row starts here-->
+         <div class="row my-3">
+            <div class="col-lg-6 col-12">
+               <!--First Dropdown Card Starts Here-->
+               <div class="card">
+                  <div class="card-header">Dropdown Menu Directions and Alignment</div>
+                  <div class="card-body">
+                     <div class="d-flex flex-wrap">
+                        <div class="btn-group dropend me-2 my-2">
+                           <button type="button" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                              DropRight
+                           </button>
+                           <ul class="dropdown-menu">
+                              <li><a class="dropdown-item" href="#">Action</a></li>
+                              <li><a class="dropdown-item" href="#">Used dropend in dropdown parent container</a></li>
+                           </ul>
+                        </div>
+                        <div class="btn-group dropstart me-2 my-2">
+                           <button type="button" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                              DropLeft
+                           </button>
+                           <ul class="dropdown-menu">
+                              <li><a class="dropdown-item" href="#">Action</a></li>
+                              <li><a class="dropdown-item" href="#">Used drostart in dropdown parent container</a></li>
+                           </ul>
+                        </div>
+                        <div class="btn-group dropup me-2 my-2">
+                           <button type="button" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                              DropUp
+                           </button>
+                           <ul class="dropdown-menu">
+                              <li><a class="dropdown-item" href="#">Action</a></li>
+                              <li><a class="dropdown-item" href="#">Used dropup in dropdown parent container</a></li>
+                           </ul>
+                        </div>
+                        <div class="btn-group my-2">
+                           <button type="button" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                              Right-aligned menu example
+                           </button>
+                           <ul class="dropdown-menu dropdown-menu-end">
+                              <li><button class="dropdown-item" type="button">Action</button></li>
+                              <li><button class="dropdown-item" type="button">Used dropdown-menu-end in dropdown menu container</button></li>
+                           </ul>
+                        </div>
+                        <div class="btn-group me-2 my-2">
+                           <button type="button" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                              Right-aligned on Devices smaller than MD
+                           </button>
+                           <ul class="dropdown-menu dropdown-menu-end dropdown-menu-md-start">
+                              <li><button class="dropdown-item" type="button">Action</button></li>
+                              <li><button class="dropdown-item" type="button">Used dropdown-menu-end and dropdown-menu-start with grid tier classes in dropdown menu container</button></li>
+                           </ul>
+                        </div>
+                        <div class="btn-group me-2 my-2">
+                           <button type="button" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                              Right-aligned on Devices greater than MD
+                           </button>
+                           <ul class="dropdown-menu dropdown-menu-lg-end dropdown-menu-start">
+                              <li><button class="dropdown-item" type="button">Action</button></li>
+                              <li><button class="dropdown-item" type="button">Another Action</button></li>
+                           </ul>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <!--First Dropdown Card Ends Here-->
+            </div>
+         </div>
+         <!--Second row ends here-->
+      </section>
+   </div>
+</body>
+</html>

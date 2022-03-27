@@ -1,6 +1,6 @@
 import 'bootstrap';
 import './scss/main.scss';
-
+import './scripts/table';
 
 function removeColOnClick(type, id) {
    document.querySelector('body').addEventListener('click',(e)=> {
@@ -177,5 +177,14 @@ window.addEventListener('load', ()=> {
       })
    });
    const modalSaveChangeBtn = document.querySelector('#gridModal .modal-footer .btn-primary');
-   modalSaveChangeBtn.addEventListener('click', createGrid);
+   if(modalSaveChangeBtn) {
+      modalSaveChangeBtn.addEventListener('click', createGrid);
+   }
+   
+   const navBtn = document.querySelector('.navbar-container .navbar-container__button');
+   navBtn.addEventListener('click',(e)=> {
+      console.log('working');
+      const element = document.querySelector('#content');
+      element.classList.toggle('no-margin');
+   })
 })

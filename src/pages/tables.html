@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Tables</title>
+</head>
+<body>
+   <div class="navbar-container">
+      <button class="navbar-container__button"  type="button" role="button" data-bs-target="#navbar" data-bs-toggle="collapse" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+         <div class="bar"></div>
+         <div class="bar"></div>
+         <div class="bar"></div>
+      </button>
+      <nav id="navbar" class="navbar navbar-light collapse show navbar-collapse bg-light side-nav  px-3 py-4">
+         <div class="side-nav__content">
+            <h3 class="navbar-text mb-4">Responsive SideBar Navbar</h3>
+            <div class="side-nav-accordion accordion" id="sideNavAccordion">
+               <div class="accordion-item side-nav-accordion__item side-nav-accordion__item--light">
+                  <h2 class="accordion-header side-nav-accordion__header" id="headingOne">
+                     <button class="accordion-button side-nav-accordion__button side-nav-accordion__button--light" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        Layout
+                     </button>
+                  </h2>
+                  <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" >
+                     <div class="accordion-body side-nav-accordion__body">
+                        <ul class="side-nav-accordion__list">
+                           <li class="side-nav-accordion__list-item"><a href="index.html">Grid</a></li>
+                        </ul>
+                     </div>
+                  </div>
+               </div>
+               <div class="accordion-item side-nav-accordion__item side-nav-accordion__item--light">
+                  <h2 class="accordion-header side-nav-accordion__header" id="headingTwo">
+                     <button class="accordion-button side-nav-accordion__button side-nav-accordion__button--light collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        UI Elements
+                     </button>
+                  </h2>
+                  <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" >
+                     <div class="accordion-body side-nav-accordion__body">
+                        <ul class="side-nav-accordion__list">
+                           <li class="side-nav-accordion__list-item"><a href="spinners.html">Buttons & Spinners</a></li>
+                           <li class="side-nav-accordion__list-item"><a href="tables.html">Tables</a></li>
+                           <li class="side-nav-accordion__list-item"><a href="modals.html">Modals & DropDowns</a></li>
+                        </ul>
+                     </div>
+                  </div>
+               </div>
+               <div class="accordion-item side-nav-accordion__item side-nav-accordion__item--light">
+                  <h2 class="accordion-header side-nav-accordion__header" id="headingThree">
+                     <button class="accordion-button side-nav-accordion__button side-nav-accordion__button--light collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        Forms
+                     </button>
+                  </h2>
+                  <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" >
+                     <div class="accordion-body side-nav-accordion__body">
+                        <ul class="side-nav-accordion__list">
+                           <li class="side-nav-accordion__list-item"><a href="form.html">General Form</a></li>
+                           <li class="side-nav-accordion__list-item"><a href="form-validation.html">Form Validation</a></li>
+                           <li class="side-nav-accordion__list-item"><a href="form-elements.html">Form Elements</a></li>
+                        </ul>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+       </nav>     
+   </div>
+   <div id="content" class="content px-3 table-content">
+      <h1 class="pt-3">Tables</h1>
+      <section class="bootstrap-table">
+         <!--Formatting Table Form Starts Here-->
+         <div class="card">
+            <div class="card-header">Format Table</div>
+            <div class="card-body container">
+               <div class="row">
+                  <div class="col-md-4 col-12">
+                     <label class="pb-3" for="bootstrap-table__color-select">Select Table Background Color</label>
+                     <select class="w-100 bootstrap-table__color-select" id="bootstrap-table__color-select">
+                        <option value="" selected>Default</option>
+                        <option value="table-primary">Table Primary</option>
+                        <option value="table-secondary">Table Secondary</option>
+                        <option value="table-success">Table Success</option>
+                        <option value="table-danger">Table Danger</option>
+                        <option value="table-warning">Table Warning</option>
+                        <option value="table-info">Table Info</option>
+                        <option value="table-dark">Table Dark</option>
+                        <option value="table-light">Table Light</option>
+                     </select>
+                  </div>
+                  <div class="col-md-4 col-12">
+                     <label class="pb-3" for="bootstrap-table__hover-select">Check to enable Hover on Table</label>
+                     <select class="w-100 bootstrap-table__hover-select" id="bootstrap-table__hover-select">
+                        <option value="" selected>None</option>
+                        <option value="table-hover">Hover</option>
+                     </select>
+                  </div>
+                  <div class="col-md-4 col-12">
+                     <label class="pb-3" for="bootstrap-table__strip-select">Check to enable Strip on Table</label>
+                     <select class="w-100  bootstrap-table__strip-select" id="bootstrap-table__strip-select">
+                        <option value="" selected>None</option>
+                        <option value="table-striped">Striped</option>
+                     </select>
+                  </div>
+               </div>
+               <div class="row py-3">
+                  <div class="col-md-6 col-12">
+                     <label class="pb-3" for="bootstrap-table__border-select">Check to change Border on Table</label>
+                     <select class="w-100 bootstrap-table__border-select" id="bootstrap-table__border-select">
+                        <option value="" selected>None</option>
+                        <option value="table-bordered">Bordered</option>
+                        <option value="table-borderless">Borderless</option>
+                     </select>
+                  </div>
+                  <div class="col-md-6 col-12">
+                     <label class="pb-3" for="bootstrap-table__border-color-select">Check to change Border on Table</label>
+                     <select class="w-100 bootstrap-table__border-color-select" id="bootstrap-table__border-color-select">
+                        <option value="" selected>None</option>
+                        <option value="border-primary">Border Primary</option>
+                        <option value="border-secondary">Border Secondary</option>
+                        <option value="border-success">Border Success</option>
+                        <option value="border-danger">Border Danger</option>
+                        <option value="border-warning">Border Warning</option>
+                        <option value="border-info">Border Info</option>
+                        <option value="border-dark">Border Dark</option>
+                        <option value="border-light">Border Light</option>
+                     </select>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <!-- Table Content Starts Here-->
+         <div class="card my-3">
+            <div class="card-header">Table</div>
+            <div class="card-body">
+               <div class="container">
+                  <table class="table" id="bootstrap-table__table">
+                     <thead>
+                        <tr>
+                           <th scope="col">#</th>
+                           <th scope="col">FirstName</th>
+                           <th scope="col">LastName</th>
+                           <th scope="col">Status</th>
+                        </tr>
+                     </thead>
+                     <tbody>
+                        <tr>
+                           <th scope="row">1</th>
+                           <td>John</td>
+                           <td>Doe</td>
+                           <td>Paid</td>
+                        </tr>
+                        <tr>
+                           <th scope="row">2</th>
+                           <td>Jane</td>
+                           <td>Doe</td>
+                           <td>Pending</td>
+                        </tr>
+                        <tr>
+                           <th scope="row">3</th>
+                           <td>Mark</td>
+                           <td>Wallberg</td>
+                           <td>Paid</td>
+                        </tr>
+                        <tr>
+                           <th scope="row">4</th>
+                           <td>Mark</td>
+                           <td>Keatean</td>
+                           <td>Paid</td>
+                        </tr>
+                        <tr>
+                           <th scope="row">5</th>
+                           <td>Russel</td>
+                           <td>Krow</td>
+                           <td>Pending</td>
+                        </tr>
+                     </tbody>
+                  </table>
+               </div>
+            </div>
+         </div>
+         <!--Table Content Ends Here-->
+      </section>
+   </div>
+</body>
+</html>
